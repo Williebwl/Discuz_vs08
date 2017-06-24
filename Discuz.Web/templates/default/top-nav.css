@@ -1,0 +1,81 @@
+﻿@charset "utf-8";
+/* CSS Document */
+
+html{color:#333;background-color:#FFF}
+body{font-size:12px;margin:0;padding:0;outline:0;}
+input,select,textarea{font-family:Tahoma,Arial,Helvetica,STHeiti;}
+body, p, div{margin:0; padding:0; word-break:break-all; word-wrap:break-word;}
+h1, h2, h3, h4, h5, h6 { margin:0; padding:0; font-size: 100%;font-family:"Microsoft Yahei",Tahoma,Arial,Helvetica,STHeiti;}
+ul,ol,li,dl,dd,dt{ margin:0; padding:0; list-style:none;}
+a { color:#5f5f5f;text-decoration: none;}
+a:hover {color:#ff5400;}
+td {font-size: 12px;color: #996600;}
+img{ border:0; padding:0; margin:0;}
+.line20 {line-height:20px;}
+.tdcenter { text-align:center;}
+.hide { display:none;}
+.clearbg { background:none;}
+.clear{clear:both;display:block;height:0;font-size:0;line-height:0;overflow:hidden;}
+.clearfix:after,.wrapper:after,.article:after{content:'\20';clear:both;display:block;}
+.clearfix,.wrapper,.article{*zoom:1;}
+.fl1{ float:left}
+.fl2{ float:right}
+.flt1{ float:left}
+.flt2{ float:right}
+
+
+#box{ width:990px; margin:0 auto; }
+.logo{ padding-top:13px;}
+.top{ background:url(http://www.feipiao.cn/template/feipiao/image/graidet.gif); height:162px;}
+.weibo{ margin-top:13px; width:350px;_width:390px;}
+.weibo dt{margin-top:10px;_margin-top:0px;}
+.weibo dt input.iku{ background:#e6e6e6; width:252px; height:25px;_height:24px; border:0; float:right; font-size:13px; line-height:24px;}
+.weibo dt input.iu02{ background:url(http://www.feipiao.cn/template/feipiao/image/title.png) no-repeat;height:31px; background-position:-0 -88px; width:89px; border:0; float:right; margin-top:-1px;}
+.weibo dd{ color:#fff; float:left; margin-left:17px; margin-bottom:8px;_margin-bottom:4px;}
+.weibo dd a{ color:#b6a792; float:left; padding-left:20px; line-height:20px;} 
+.weibo dd a:hover{color:#ff5400;}
+.link01{ background:url(http://www.feipiao.cn/template/feipiao/image/title.png) no-repeat; height:17px;}
+.link02{ background:url(http://www.feipiao.cn/template/feipiao/image/title.png) no-repeat; height:16px; background-position:-0px -22px;}
+.link03{ background:url(http://www.feipiao.cn/template/feipiao/image/title.png) no-repeat; height:16px; background-position:-0px -43px;}
+.link04{ background:url(http://www.feipiao.cn/template/feipiao/image/title.png) no-repeat; height:17px; background-position:-0px -62px;}
+
+/*顶部通用导航菜单*/
+.nav{ margin-left:0px;}
+.nav li{float:left; font-size:14px; font-weight:bold;color:#fff;height:78px; margin-top:13px;_margin-top:10px; overflow:hidden}
+.nav li a{color:#fff;}
+.nav li a:hover{text-decoration:underline; color:#fff;}
+.nav li dl{display:block; padding-top:10px;}
+.nav li dt{float:left;line-height:22px;padding-left:5px;}
+.nav li dd{font-size:12px; font-weight:normal;line-height:18px;}
+.nav li dt.home{height:51px;padding-left:2px;}
+.nav li dt.home02{height:55px;display:inline;padding-right:5px;*padding-right:0px;}
+.nav li dt.home03{height:50px;display:inline;padding-right:10px;*padding-right:0px;}
+.nav li dt.home04{height:45px;display:inline;padding-right:6px;*padding-right:0px;}
+.nav li dt.home05{height:51px;display:inline;}
+.nav li dt.home06{height:51px;display:inline;}
+
+.d_over1,.d_over2,.d_over3,.d_over4,.d_over5,.d_over6{}
+.d_out1{width:76px;background:url(http://www.feipiao.cn/template/feipiao/image/top_menu1.gif) no-repeat; padding-left:22px;}
+.d_over1{width:76px;background:url(http://www.feipiao.cn/template/feipiao/image/top_menu01.gif) no-repeat;padding-left:22px;}
+
+.d_out2{width:135px;background:url(http://www.feipiao.cn/template/feipiao/image/top_menu2.gif) no-repeat;padding-left:5px;}
+.d_over2{width:135px;background:url(http://www.feipiao.cn/template/feipiao/image/top_menu02.gif) no-repeat;padding-left:5px;}
+
+.d_out3{width:124px;background:url(http://www.feipiao.cn/template/feipiao/image/top_menu3.gif) no-repeat;padding-left:11px;}
+.d_over3{width:124px;background:url(http://www.feipiao.cn/template/feipiao/image/top_menu03.gif) no-repeat;padding-left:11px;}
+
+.d_out4{width:195px;background:url(http://www.feipiao.cn/template/feipiao/image/top_menu4.gif) no-repeat;padding-left:5px;}
+.d_over4{width:195px;background:url(http://www.feipiao.cn/template/feipiao/image/top_menu04.gif) no-repeat;padding-left:5px;}
+
+.d_out5{width:137px;background:url(http://www.feipiao.cn/template/feipiao/image/top_menu5.gif) no-repeat;padding-left:7px;}
+.d_over5{width:137px;background:url(http://www.feipiao.cn/template/feipiao/image/top_menu05.gif) no-repeat;padding-left:7px;}
+
+.d_out6{width:76px;background:url(http://www.feipiao.cn/template/feipiao/image/top_menu6.gif) no-repeat;padding-left:10px;}
+.d_over6{width:76px;background:url(http://www.feipiao.cn/template/feipiao/image/top_menu06.gif) no-repeat;padding-left:10px;}
+
+.nav_xizi{padding-top:20px;}
+
+.gwc{}
+.gwc li{ float:left; color:#fff; padding-top:67px; margin-left:5px; font-weight:bold;}
+.gwc li a{ color:#fff;}
+.gwc li a:hover{ color:#4e4e4e;}

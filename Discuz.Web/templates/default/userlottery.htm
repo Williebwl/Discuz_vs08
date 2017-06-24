@@ -1,0 +1,155 @@
+﻿ <%if page_err==0%>
+    <%if ispost%>
+        <%template _header%>
+        <%template _msgbox%>
+        <%template _copyright%>
+        <%template _footer%>
+    <%else%>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>ipad mini天天抽</title>
+       <link href="{cssdir}/top-nav.css" rel="stylesheet" type="text/css" />
+    <link href="{cssdir}/fot.css" rel="stylesheet" type="text/css" />
+    
+    <link href="{cssdir}/taohua.css" rel="stylesheet" type="text/css" />
+
+    <script src="{jsdir}/taohuaipad.js" type="text/javascript"></script>
+
+</head>
+<body>
+   <%template _header%>
+   
+    <div class="Pieces_red">
+        <div class="ipad_beij">
+            <div id="xianzi_box">
+                <img src="{imagedir}/ipad_02.jpg" width="990" height="208" />
+            </div>
+        </div>
+        <div class="ipad_beij02">
+            <div id="xianzi_box">
+                <img src="{imagedir}/ipad_04.jpg" width="990" height="222" />
+            </div>
+        </div>
+        <div class="ipad_beij03">
+            <div id="xianzi_box">
+                <img src="{imagedir}/ipad_05.jpg" width="990" height="126" />
+                <a href="#">
+                    <img src="{imagedir}/ipad_06.jpg" border="0" usemap="#Map" /></a>
+                <map name="Map" id="Map">
+                    <area shape="rect" coords="650,79,775,100" href="taohua_xianzi.aspx" target="_blank" />
+                    <area shape="rect" coords="89,67,212,87" href="taohua_5000.aspx" />
+                </map>
+            </div>
+        </div>
+        <div class="ipad_cet">
+            <ul class="yuanxing">
+                <div>
+                    <img src="{imagedir}/yuanxing.gif" width="900" height="9" /></div>
+                <div class="yxrt">
+                    <span>你是否这样抱怨过</span>“我不是果粉，我也不是牛顿，苹果都喜欢砸他。我也不相信天上会掉馅饼，运气对我来说只是个奢侈品。<span>“但我更愿意这样告诉你“</span>运气是很容易擦肩而过的，她就像你年少时暗恋的女孩只是因为你没主动而已所以你望穿了秋水，伊人也还在远方。<span>“2013年上海桃花节惊艳亮相了</span>，飞票网送大奖了<span>IPADmini天天抽</span>，让你笑傲人生，你敢参加，我就敢送！</div>
+                <div>
+                    <img src="{imagedir}/yuanxing2.gif" /></div>
+            </ul>
+            <dl class="ipad_stp">
+                <dt>
+                    <img src="{imagedir}/pad_yw.gif" width="15" height="297" /></dt>
+                <dd style="margin-top: 28px;">
+                    <img src="{imagedir}/pad_stp.gif" width="620" height="108" /></dd>
+                <dd style="margin-top: 32px; padding-bottom: 10px;">
+                    <label style="margin-left: 20px">
+                        活动详情：</label></dd>
+                <dd>
+                    &nbsp;&nbsp;&nbsp;&nbsp;<b>抽奖时间：</b>2013-4-5 至 2013-4-25<br />&nbsp;&nbsp;&nbsp;&nbsp;<b>活动规则：</b>每天从当日0点至24点用户输入的券号中随机抽取1位获奖者（每个ID限用1次）<br />
+                    &nbsp;&nbsp;&nbsp;&nbsp;<b>活动奖品：</b>每天一台苹果iPad Mini（16GB/WIFI版） 价值：<font color="red">2498</font>元
+
+</dd>
+                <dd style="padding-top: 20px;">
+                    <span>&nbsp;&nbsp;&nbsp;在以下指定商家消费索取奖券，每个人限1张奖券.</span></dd>
+                <dd>
+                    &nbsp;&nbsp;&nbsp;&nbsp;南汇桃花村 地址：浦东新区惠南镇北门路289号桃园售票处</dd>
+                <dd>
+                    &nbsp;&nbsp;&nbsp;&nbsp;大团桃园 地址：浦东新区大团镇赵桥村柴场888号桃园售票处</dd>
+                <dd style="padding-left: 30px;">
+                    &nbsp;&nbsp;&nbsp;&nbsp;新场桃园 地址：浦东新区新场镇果园村桃园售票处</dd>
+                <dd style="padding-left: 30px;">
+                    &nbsp;&nbsp;&nbsp;&nbsp;滨海世外桃源 地址：浦东新区海滨旅游度假区玉兰路3号桃园售票处</dd>
+                <dd style="padding-left: 30px;">
+                    &nbsp;&nbsp;&nbsp;&nbsp;合庆有机桃园 地址：浦东新区合庆镇前哨支路98号桃园售票处</dd>
+            </dl>
+            <div class="songchu">
+                <h2 class="songchu_tp">
+                    已送出{numberipad}部iPadmini</h2>
+                <ul class="songchu_news">
+                    <%loop us userrealtimelist%>
+                    <%set (string){str}=ForumUtils.ConvertDay({us[username]},{us[createdate]})%>
+                    <li>{str}</li>
+                    <%/loop%>
+                </ul>
+            </div>
+            <div class="right">
+                <img src="{imagedir}/pad_yw2.gif" /></div>
+            <div class="clear">
+            </div>
+            <div class="quanhao">
+                <div class="confirm">
+                    <form method="post" name="formName" id="formName">
+                    <input type="text" name="number" id="ticketnumber" runat="server" value="请输入券号···"  onfocus ="empy()"/>
+                    <a onclick="fsubmit()" style="cursor:pointer;">确认</a>
+                    </form>
+                </div>
+            </div>
+            <div class="hjmd">
+            </div>
+            <div class="mingdan02">
+                <div class="tepr">
+                </div>
+                <%if {strmsg}==""%>
+                    <ul class="mingdan">
+                      <li style=" margin-left:350px; width: 358px; font-weight:bold; margin-top:10px">活动未开始，目前没有获奖名单</li>
+                    </ul>
+                <%else%>
+                <ul class="mingdan">
+                        <%loop users userlotterlist%>
+                        <li class="winners">
+                            <%set (string){str}=ForumUtils.ConvertDay({""},{users[createdate]})%>
+                            {str}<br />
+                            <%set (string){mobile}=ForumUtils.ConvertPhone({users[mobile]})%>
+                            获奖者：{mobile}</li>
+                        <%/loop%>
+                    <div class="clear">
+                    </div>
+                </ul>
+               <%/if%>
+                <div class="tepr02">
+                </div>
+            </div>
+            <div class="needing">
+                <dl>
+                    <dt></dt>
+                    <dd>
+                        1.本次活动中的获奖信息，活动主办方将以邮件和电话联络2种方式通知获奖网友。</dd>
+                    <dd>
+                        2.本次活动中获奖的网友请在收到获奖信息后，尽快回复主办方（飞票网）的获奖通知信。如在获奖信息公布10天内仍未回复确认，则视为放弃。</dd>
+                    <dd>
+                        3.本次活动严谨作弊，一经发现，即取消相关参与者的获奖资格。</dd>
+                    <dd>
+                        4.本次活动最终解释权归飞票网所以。</dd>
+                </dl>
+            </div>
+            <div class="clear">
+            </div>
+        </div>
+    </div>
+    
+    <%template _webfooter%>
+</body>
+</html>
+<%/if%>
+    <%else%>
+    <%template _header%>
+    <%template _errmsgbox%>
+    <%template _copyright%>
+    <%template _footer%>
+    <%/if%>

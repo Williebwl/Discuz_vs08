@@ -1,0 +1,31 @@
+<?xml version="1.0" standalone="yes"?>
+<topics>
+  <xs:schema id="topics" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xs:element name="topics" msdata:IsDataSet="true" msdata:UseCurrentLocale="true">
+      <xs:complexType>
+        <xs:choice minOccurs="0" maxOccurs="unbounded">
+          <xs:element name="topic">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="tid" type="xs:string" minOccurs="0" />
+                <xs:element name="tidCount" type="xs:int" minOccurs="0" />
+                <xs:element name="tid0Count" type="xs:int" minOccurs="0" />
+                <xs:element name="tid1Count" type="xs:int" minOccurs="0" />
+                <xs:element name="tid2Count" type="xs:int" minOccurs="0" />
+                <xs:element name="tid3Count" type="xs:int" minOccurs="0" />
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+        </xs:choice>
+      </xs:complexType>
+    </xs:element>
+  </xs:schema>
+  <topic>
+    <tid>165,150,151</tid>
+    <tidCount>3</tidCount>
+    <tid0Count>1</tid0Count>
+    <tid1Count>2</tid1Count>
+    <tid2Count>0</tid2Count>
+    <tid3Count>1</tid3Count>
+  </topic>
+</topics>

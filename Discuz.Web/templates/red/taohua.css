@@ -1,0 +1,102 @@
+body{font-size:13px;margin:0;padding:0;outline:0; font-family:宋体; color:#fff;}
+input,select,textarea{font-family:Tahoma,Arial,Helvetica,STHeiti;}
+body, p, div{margin:0; padding:0; word-break:break-all; word-wrap:break-word;}
+h1, h2, h3, h4, h5, h6 { margin:0; padding:0; font-size: 100%;font-family:"Microsoft Yahei",Tahoma,Arial,Helvetica,STHeiti; color:#fff;; }
+ul,ol,li,dl,dd,dt{ margin:0; padding:0; list-style:none;}
+img{ border:0}
+.clear{ clear:both}
+.right{ float:right}
+.Pieces_red{ background:#8f092c}
+.purple{background:#59002e;}
+
+.backtop{ background:url(images/banckgt_02.jpg) center top no-repeat; width:100%; height:auto}
+.backtop02{ background:url(images/banckgt_04.jpg) center top no-repeat; width:100%; height:auto}
+.backtop03{ background:#131313 url(images/banckgt_05.jpg) center top no-repeat; width:100%; height:auto}
+.backtop04{ background:url(images/banckgt_07.jpg) center top no-repeat; width:100%; height:auto;}
+#xianzi_box{ width:990px; margin:0 auto;}
+.The_rules{ background:url(images/guize_bck.jpg) no-repeat; height:495px; padding:0 0 0 21px;}
+.daoyu{ font-size:24px; color:#fe0249; padding-top:28px;}
+.step{ padding-top:13px;}
+.step li{ float:left; display:block; width:161px;}
+.jb_xian{margin-top:15px;}
+.instructions{ line-height:24px; padding:17px 0 0 9px;font-family:"Microsoft Yahei"}
+.instructions dt{ color:#fff; padding-bottom:10px;}
+.instructions dt h2{ color:#fe0267; font-size:24px; padding-bottom:15px;}
+.instructions dd{ color:#fff;}
+.zj_left{ width:653px; float:left}
+.sign_up{float:left;margin-top:6px;width:286px;}
+.sign_bot{background:url(images/baoming.gif) no-repeat; height:155px;padding:121px 0px 0 122px;}
+.sign_bot li{ color:#fff; line-height:20px; font-size:12px;}
+.sign_bot li span{font-weight:bold}
+.canjia_aniu{ padding-top:7px; text-align:center}
+.pingxuan{font-family:"Microsoft Yahei"; padding-top:18px; line-height:20px;}
+
+/*投票参赛选手*/
+.contestants{width:963px; margin:32px 13px 0 13px;}
+.photos{ background:#ec135a; height:100%; padding-bottom:13px;}
+.photos li{border:1px solid #a50035; padding:1px; width:221px; margin:13px 0 0px 13px; float:left; display:inline;}
+.photos li dl{ background:#c80c49; height:100%;}
+.photos li dl dt{ padding:10px;}
+.photos li dl dd{ float:left; display:block;font-family:"Microsoft Yahei"; font-size:18px; padding:0 12px 0px 12px; line-height:28px;}
+.photos li dl dd span{ font-size:14px; font-family:宋体;}
+.photos li dl dd span label{ color:#f3f06d}
+.photos li dl dd a{ padding-left:10px;}
+.contestants_top{ height:139px; overflow:hidden}
+.contestants_top li{ float:left; display:block;}
+.contestants_top li.search{ background:url(images/search.gif) no-repeat; height:43px; width:244px; margin:99px 0 0 0px; padding:3px 0 0 3px;}
+.contestants_top li.search input{ width:194px;background:url(images/search04.gif); height:29px;border:0}
+.roed{ background:#ec135a; height:30px; width:100%}
+.list_page{ float:right; margin-top:6px;}
+.list_page li{ float:left; margin-left:3px;}
+.list_page li a{ background:#fff; border:1px solid #e5e3e6; display:block; width:30px; height:18px; text-align:center; padding-top:11px; text-decoration:none; color:#4c4c4c}
+.list_page li a:hover{background:#fff; border:1px solid #dc5c95; color:#d92682; display:block;}
+.list_page li a.one{background:#fff; border:1px solid #dc5c95; color:#d92682; display:block;}
+
+/*注意事项*/
+.Matters{ background:url(images/zhuyi.gif) no-repeat; height:217px; margin-top:17px; padding:25px 0 0 25px;font-family:"Microsoft Yahei"; line-height:24px;}
+.Matters dt{font-size:24px; color:#fe0243; padding-bottom:15px;}
+.Matters dd{font-size:14px; }
+
+/*底部浮动导航*/
+.foot_nav{ width:207px;}
+.foot_nav li{}
+.foot_nav li.thnv{ background:url(images/th_nav06.png) no-repeat; height:123px;}
+.foot_nav li.thnv02{ background:url(images/th_nav05.png) no-repeat; height:318px; width:178px; margin:0 auto}
+.foot_nav li.thnv03{ background:url(images/th_nav03.png) no-repeat; height:97px;}
+
+
+/*ipad抽奖*/
+.ipad_beij{ background:url(images/pad_bj_01.jpg) center top no-repeat; width:100%; height:auto }
+.ipad_beij02{ background:url(images/pad_bj_02.jpg) center top no-repeat; width:100%; height:auto}
+.ipad_beij03{ background:url(images/pad_bj_03.jpg) center top no-repeat; width:100%; height:auto}
+.ipad_cet{ background:url(images/pad_bj.gif);width:990px; margin:0 auto;}
+.yuanxing{margin:0 44px 0 49px;}
+{ margin:0; padding:0; border:0;height:100%; overflow:hidden}
+.yxrt{background:#fdbdcd;font-family:"Microsoft Yahei"; color:#85043d; font-size:14px; padding:0 23px 0 23px; margin-left:1px; }
+.yxrt span{ font-size:18px;}
+.ipad_stp{ width:649px; float:left}
+.ipad_stp dt{ float:left}
+.ipad_stp dd{ float:right; width:620px; color:#585858; line-height:24px; font-size:12px;}
+.ipad_stp dd span{ font-size:14px; font-weight:bold;z-index:2em;}
+.ipad_stp dd label{font-family:"Microsoft Yahei"; font-size:24px; color:#fe0267; }
+.songchu{ width:287px; float:left; padding-left:17px;}
+.songchu_tp{ background:url(images/pad_anniu.gif) no-repeat; height:50px; padding:11px 0 0 23px; margin-top:29px;}
+.songchu_news{ background:#fff; border:3px solid #fde7e9; padding:13px;}
+.songchu_news li{ color:#585858; line-height:24px; font-size:12px;}
+.quanhao{ background:url(images/pad_huase.gif) no-repeat; height:97px; margin:40px 32px 0 32px;padding-top:30px;}
+.confirm{ background:url(images/queren.gif) no-repeat; width:298px; height:53px; padding:7px; margin:0 auto;}
+.confirm input{background:url(images/search04.gif); height:29px;border:0; width:244px;}
+.confirm a{ color:#fff; text-decoration:none; font-size:14px; vertical-align:middle;}
+.hjmd{position:relative;margin-left:-24px;margin-top:-10px; background:url(images/huojiang.gif) no-repeat; height:60px; margin-right:-20px}
+.mingdan{ width:896px; margin:0 auto;}
+.mingdan li{}
+.tepr{ background:url(images/yuanxing.gif) no-repeat; height:9px; overflow:hidden}
+.tepr02{ background:url(images/yuanxing2.gif) no-repeat; height:9px;}
+.mingdan{ background:#fdbdcd; padding-left:20px; overflow:hidden; width:877px;}
+.needing{ background:url(images/pad_yw5.gif) bottom no-repeat; height:299px;}
+.needing dl{padding-top:41px; }
+.needing dl dt{position:relative;margin-left:-24px;padding-bottom:40px;background:url(images/huojiang2.gif) no-repeat; height:60px; width:1036px;}
+.needing dl dd{ color:#585858; line-height:24px; padding-left:80px;}
+.winners{border-right:1px dotted #85043d; width:154px; height:44px; float:left; margin-left:15px; color:#85043d; line-height:24px;}
+.mingdan02{ width:897px; margin:0 auto;}
+

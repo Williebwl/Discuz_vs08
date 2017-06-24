@@ -1,0 +1,261 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>{pagetitle} - {config.forumtitle} {config.seotitle} </title>
+    <link href="{cssdir}/taohua.css" rel="stylesheet" type="text/css" />
+    <link href="{cssdir}/top-nav.css" rel="stylesheet" type="text/css" />
+    <link href="{cssdir}/fot.css" rel="stylesheet" type="text/css" />
+    <style type="text/css">
+        .previewShowWindow{position:absolute;border:1px solid #dadade;background:#95959d;padding:5px;display:none;color:#fff;text-align:center;z-index:999;}
+    </style>
+    <script type="text/javascript" src="{config.jqueryurl}"></script>
+
+    <script type="text/javascript" src="{jsdir}/jBox/jquery.jBox-2.3.min.js"></script>
+
+    <script type="text/javascript" src="{jsdir}/jBox/i18n/jquery.jBox-zh-CN.js"></script>
+
+    <link type="text/css" rel="stylesheet" href="{jsdir}/jBox/Skins/Red/jbox.css" />
+    
+    
+    <script src="{jsdir}/jquery.lazyload.js?t=20130315.js" type="text/javascript"></script>
+    <script src="{jsdir}/preview.js?t=20130407.js" type="text/javascript"></script>
+
+    <script type="text/javascript">
+//     $(document).ready(
+//          function($){
+//          $("img").lazyload({
+//            placeholder : "{imagedir}/grey.jpg", //加载图片前的占位图片
+//                 effect : "fadeIn", //加载图片使用的效果(淡入)
+//            container: $(".photos")
+//           });
+//          });
+      
+      function SearchFocus(){
+          var topsearch=$('#txt_topsearch');
+          if(topsearch.val()=='景区或酒店名称')
+          {
+            topsearch.val("")
+          }
+        }
+
+        function SearchBlur(){
+          var topsearch=$('#txt_topsearch');
+          if(topsearch.val()==''){
+            topsearch.val("景区或酒店名称");
+          }
+        }
+        
+        function xuanshouBlur(){
+           var aid=$('#txt_aid');
+          if(aid.val()=='')
+           {
+             aid.val("请输入选手号/姓名");
+             //aid.css("color","#D0D0D0");
+           }
+        }
+        function xuanshuFocus(){
+          var aid=$('#txt_aid'); 
+          if(aid.val()=='请输入选手号/姓名')
+          {
+             aid.val('');
+             //aid.css("color","#000");
+          }
+        }
+    </script>
+
+    <script src="{jsdir}/taohua_xianzi.js?t=20130315.js" type="text/javascript"></script>
+
+</head>
+<body>
+    <%template top%>
+    <div class="purple">
+        <div class="backtop">
+            <div id="xianzi_box">
+                <img src="{imagedir}/top_02.jpg" border="0" />
+            </div>
+        </div>
+        <div class="backtop02">
+            <div id="xianzi_box">
+                <img src="{imagedir}/top_04.jpg" />
+                <img src="{imagedir}/top_05.jpg" />
+            </div>
+        </div>
+        <div class="backtop03">
+            <div id="xianzi_box">
+                <img src="{imagedir}/top_06.jpg" width="989" height="306" border="0" usemap="#Map" />
+                <map name="Map" id="Map">
+                    <area shape="rect" coords="81,226,219,251" href="taohua_5000.aspx" target="_blank" />
+                    <area shape="rect" coords="434,258,570,286" href="userlottery.aspx" target="_blank" />
+                    <area shape="rect" coords="408,212,409,213" href="#" target="_blank" />
+                </map>
+                <img src="{imagedir}/top_07.jpg" />
+            </div>
+        </div>
+        <div class="backtop04">
+            <div id="xianzi_box">
+                <img src="{imagedir}/top_08.jpg" />
+            </div>
+        </div>
+        <div id="xianzi_box">
+            <img src="{imagedir}/top_09.jpg" />
+            <div class="The_rules">
+                <div class="zj_left">
+                    <h2 class="daoyu">
+                        导语:</h2>
+                    <ul class="step">
+                        <li>
+                            <img src="{imagedir}/stpe1.gif" width="161" height="109" /></li>
+                        <li>
+                            <img src="{imagedir}/stpe2.gif" width="161" height="109" /></li>
+                        <li>
+                            <img src="{imagedir}/stpe3.gif" width="161" height="109" /></li>
+                        <li>
+                            <img src="{imagedir}/stpe4.gif" width="151" height="109" /></li>
+                        <div class="clear">
+                        </div>
+                    </ul>
+                    <div class="jb_xian">
+                        <img src="{imagedir}/stpe_xian.gif" /></div>
+                    <dl class="instructions">
+                        <dt>
+                            <h2>
+                                活动详细:</h2>
+                            活动时间：报名时间 2013-3-25 至 2013-4-15 投票时间 2013-4-16 至 2013-5-5 复选时间 5月中旬</dt>
+                        <dd style="font-weight: bold; font-size: 14px;">
+                            报名条件：</dd>
+                        <dd>
+                            1.需提供本人正面与桃花的合影照片；</dd>
+                        <dd>
+                            2.照片为素颜照或淡妆照，浓妆不予入选；</dd>
+                        <dd>
+                            3.照片经图形软件过度处理失真不予入选；</dd>
+                        <dd>
+                            4.报名者须女性，年龄在17岁至35岁之间。</dd>
+                    </dl>
+                </div>
+                <div class="sign_up">
+                    <ul class="sign_bot">
+                        <li><span>一等奖 1名</span></li>
+                        <li>迪拜七星酒店奢华之旅7日游 <a href="showtopic-135.aspx" target="_blank">详细</a></li>
+                        <li><span>二等奖 2名</span></li>
+                        <li>三亚荔苑雨林别墅浪漫之旅3日游 <a href="showtopic-136.aspx" target="_blank">详细</a></li>
+                        <li><span>三等奖 3名</span></li>
+                        <li>千岛湖希尔顿心灵之旅3日游 <a href="showtopic-137.aspx" target="_blank">详细</a></li>
+                        <div class="clear">
+                        </div>
+                    </ul>
+                    <div class="canjia_aniu">
+                        <a href="showforum-36.aspx" target="_blank">
+                            <img src="{imagedir}/cjanniu.gif" border="0" /></a></div>
+                </div>
+                <div class="clear">
+                </div>
+                <div class="pingxuan">
+                    <h2>
+                        评选规则：</h2>
+                    评选在报名结束后的规定时间内接受会员的投票，每位网民只能投票一次重复无效，各类排行榜以会员得到的有效选票总数由高到低排列，实时动态显示。</div>
+            </div>
+            <div class="contestants">
+                <form action="" method="get" id="formsearch" name="formsearch">
+                <ul  class="contestants_top">
+                    <li>
+                        <img src="{imagedir}/cansai.gif" width="311" height="139" align="left" /></li>
+                    <li class="search">
+                        <input name="txt_aid" id="txt_aid" type="text"  style="color: rgb(0, 0, 0);" onblur="xuanshouBlur();" onfocus="xuanshuFocus();" value="请输入选手号/姓名" />
+                        <input id="page" type="hidden" value="{pageid}" name="page" />
+                        <input id="orderby" type="hidden" value="{orderby}" name="orderby" />
+                        <input id="ordertype" type="hidden" value="{ordertype}" name="ordertype" />
+                        <a href="javascript:void(0);" onclick="document.formsearch.submit();">
+                            <img src="{imagedir}/search02.gif" id="img_search" width="37" height="32" align="absmiddle" /></a>
+                    </li>
+                    <li style="margin-top: 99px;"><a href="javascript:void(0);" onclick="document.formsearch.submit();">
+                        <img src="{imagedir}/search03.gif" id="img_orderby" /></a></li>
+                    <li style="margin-top: 99px; float: right">
+                        <img src="{imagedir}/cansai02.gif" width="214" height="40" align="right" /></li>
+                    <div class="clear">
+                    </div>
+                </ul>
+
+                <script type="text/javascript">
+					    var ordertype=$('#ordertype');
+                           if(ordertype.val()==''){
+                              $('#img_orderby').attr('src','{imagedir}/search03.gif');
+                           }else
+                           {
+                              if(ordertype.val()=='desc')//从高到低
+                              { 
+                                ordertype.val('asc');
+                                $('#img_orderby').attr('src','{imagedir}/search_33.gif');
+                              }else if(ordertype.val()=='asc')//从低到高
+                              {
+                                ordertype.val('desc');
+                                $('#img_orderby').attr('src','{imagedir}/search03.gif');
+                              }
+                           }
+                </script>
+
+                </form>
+                <div class="roed">
+                    <img src="{imagedir}/cansai03.gif" width="174" height="29" align="right" /></div>
+                <ul class="photos">
+                    <%loop vote vote_list%>
+                    <li>
+                        <dl>
+                            <dt>
+                            <a href="javascript:void(0);" onclick="Votepic({vote[aid]},{vote[uid]});" path="upload/{vote[filename]}" class="preview">
+                                <img src="upload/{vote[filename]}" width="200" height="247" border="0" /></a>
+                                </dt>
+                            <%set (string){voteinfo}=Utils.GetSubString({vote[aid]}+"号 "+ {vote[title]},18,"...")%>
+                            <dd title="{vote[aid]}号 {vote[title]}">
+                                {voteinfo}</dd>
+                            <dd>
+                            </dd>
+                            <dd>
+                                <span>已获<label id="lblticketnum{vote[aid]}">{vote[ticketnum]}</label>票</span></dd>
+                            <dd class="fl2">
+                                <a href="javascript:void(0);" onclick="CheckVote({vote[aid]},'{vote[title]}',{vote[uid]});">
+                                    <img src="{imagedir}/toupiao.gif" align="texttop" border="0" /></a></dd>
+                            <div class="clear">
+                            </div>
+                        </dl>
+                    </li>
+                    <%/loop%>
+                    <div class="clear">
+                    </div>
+                </ul>
+                <!--<ul class="list_page">
+                    <li><a href="#" class="one">1</a></li>
+                    <li><a href="#">2</a></li>
+                    <li><a href="#">3</a></li>
+                    <li><a href="#">...</a></li>
+                    <li><a href="#">5</a></li>
+                </ul>-->
+                <div class="wrap cl">
+                    <div class="main datalist">
+                        <div class="pages_btns cl">
+                            <div class="pages">
+                                <kbd>共{totalvote}位选手</kbd>{pagenumbers}<kbd>共{pagecount}页</kbd>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="clear">
+                </div>
+            </div>
+            <dl class="Matters">
+                <dt>注意事项</dt>
+                <dd>
+                    1.本次活动中的获奖信息，活动主办方将以邮件和电话联络2种方式通知获奖网友。</dd>
+                <dd>
+                    2.本次活动中获奖的网友请在收到获奖信息后，尽快回复主办方（飞票网）的获奖通知信。如在获奖信息公布10天内仍未回复确认，则视为放弃。</dd>
+                <dd>
+                    3.本次活动严谨作弊，一经发现，即取消相关参与者的获奖资格。</dd>
+                <dd>
+                    4.本次活动最终解释权归飞票网所以。</dd>
+            </dl>
+        </div>
+    </div>
+    <%template _webfooter%>
+</body>
+</html>

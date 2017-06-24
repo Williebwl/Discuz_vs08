@@ -1,0 +1,105 @@
+﻿<div class="top">
+    <div id="box">
+        <div class="fl1 logo">
+            <a href="http://www.feipiao.cn">
+                <img src="http://www.feipiao.cn/template/feipiao/image/logo.jpg" /></a></div>
+        <div class="fl1 logoad">
+        </div>
+        <dl class="weibo fl2">
+            <dd class="link01" style="margin-left: 32px;">
+                <a href="http://www.feipiao.cn/index.php?act=invite">邀请好友</a></dd>
+            <dd class="link02">
+                <a href="http://www.feipiao.cn/index.php?act=subscribe">有奖定制</a></dd>
+            <dd class="link03">
+                <a href="#" onclick="AddToFavorite();">加入收藏</a></dd>
+            <dd class="link04">
+                <iframe width="63" height="24" frameborder="0" allowtransparency="true" marginwidth="0"
+                    marginheight="0" scrolling="no" border="0" src="http://widget.weibo.com/relationship/followbutton.php?language=zh_cn&width=63&height=24&uid=2088419243&style=1&btn=red&dpc=1">
+                </iframe>
+            </dd>
+            <dt>
+                <form method="get" action="http://www.feipiao.cn/index.php">
+                <input name="button" id="button" type="submit" value="" class="iu02">
+                <input name="serch" type="text" id="txt_topsearch" value="景区或酒店名称" style="color: #CCC;"
+                    onfocus="SearchFocus();" onblur="SearchBlur();" class="iku">
+                <input type="hidden" name="act" value="group_list">
+                </form>
+            </dt>
+        </dl>
+        <div class="clear">
+        </div>
+        <ul class="nav">
+            <li class="d_out1" onmouseover="this.className='d_over1'" onmouseout="this.className='d_out1'">
+                <dl>
+                    <dt><a href="http://www.feipiao.cn/index.php">首&nbsp;&nbsp;页</a></dt>
+                </dl>
+            </li>
+            <li class="d_out2" onmouseover="this.className='d_over2'" onmouseout="this.className='d_out2'">
+                <dl>
+                    <dt class="home02"><a href="http://www.feipiao.cn/index.php?act=group_list&type=today_sales">
+                        限时特价</a></dt>
+                    <dd class="nav_xizi">
+                        <a href="http://www.feipiao.cn/index.php?act=group_list&type=today_sales">今日特价</a></dd>
+                    <dd>
+                        <a href="http://www.feipiao.cn/index.php?act=group_list&type=before_sales">往期特价</a></dd>
+                </dl>
+            </li>
+            <li class="d_out3" onmouseover="this.className='d_over3'" onmouseout="this.className='d_out3'">
+                <dl>
+                    <dt class="home03"><a href="http://www.feipiao.cn/index.php?act=freew">自由行</a></dt>
+                    <dd class="nav_xizi">
+                        <a href="http://www.feipiao.cn/index.php?act=freew&type=free_list&free_type=rim">周边游</a></dd>
+                    <dd>
+                        <a href="http://www.feipiao.cn/index.php?act=freew&type=free_list&free_type=inland">
+                            国内游</a></dd>
+                </dl>
+            </li>
+            <li class="d_out4" onmouseover="this.className='d_over4'" onmouseout="this.className='d_out4'">
+                <dl>
+                    <dt class="home04"><a href="http://bbs.feipiao.cn/" target="_blank">
+                        驴友论坛</a></dt>
+                    <dd class="nav_xizi">
+                        <a href="http://bbs.feipiao.cn/showforum-13.aspx" target="_blank">
+                            有奖活动</a><span style="padding-left: 15px;"><a href="http://bbs.feipiao.cn/showforum-8.aspx"
+                                target="_blank">攻略游记</a></span></dd>
+                    <dd>
+                        <a href="http://bbs.feipiao.cn/showforum-9.aspx" target="_blank">
+                            户外美食</a><span style="padding-left: 15px;"><a href="http://bbs.feipiao.cn/showforum-6.aspx"
+                                target="_blank">晒单足迹</a></span></dd>
+                </dl>
+            </li>
+            <li class="d_out5" onmouseover="this.className='d_over5'" onmouseout="this.className='d_out5'">
+                <dl>
+                    <dt class="home05"><a href="http://www.feipiao.cn/index.php?act=help&big_id=106&id=56">
+                        品牌介绍</a></dt>
+                    <dd class="nav_xizi">
+                        <a href="http://www.feipiao.cn/index.php?act=help&big_id=106&id=56">关于飞票</a></dd>
+                    <dd>
+                        <a href="http://www.feipiao.cn/index.php?act=help&big_id=107&id=62">商务合作</a></dd>
+                </dl>
+            </li>
+            <li class="d_out6" onmouseover="this.className='d_over6'" onmouseout="this.className='d_out6'">
+                <dl>
+                    <dt class="home06"><a href="http://www.feipiao.cn/index.php?act=help">帮助中心</a></dt>
+                </dl>
+            </li>
+        </ul>
+        <ul class="gwc fl1">
+            <%if {userid}==-1%>
+            <li><a href="http://www.feipiao.cn/index.php?act=login">登录</a></li>
+            <li>|</li>
+            <li><a href="http://www.feipiao.cn/index.php?act=signup">注册</a></li>
+            <%else %>
+            <li><a href="{forumpath}userinfo.aspx?userid={userid}">{username}</a></li>
+            <%if {useradminid}==1%>
+            <li>|</li>
+            <li><a href="{forumpath}admin/index.aspx" target="_blank">系统设置</a> </li>
+            <%/if%>
+            <li>|</li>
+            <li><a href="{forumpath}logout.aspx?userkey={userkey}">退出</a></li>
+            <%/if%>
+        </ul>
+        <div class=" clear">
+        </div>
+    </div>
+</div>

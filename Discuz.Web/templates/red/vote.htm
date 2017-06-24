@@ -1,0 +1,91 @@
+﻿<%template _header%>
+<div class="wrap cl pageinfo">
+    <div id="nav">
+        <a href="{config.forumurl}" class="title">{config.forumtitle}</a> &raquo; <strong>投票</strong>
+    </div>
+</div>
+<div class="wrap cl">
+    <%if page_err==0%>
+    <h3>
+        投票</h3>
+    <table width="900px">
+        <tr>
+            <td colspan="7">
+                                <img src="upload/{dr_vote[filename]}" width="550" height="380" />
+            </td>
+        </tr>
+        <tr>
+            <td>
+                作品编号：
+            </td>
+            <td>
+                <div class="pages_btns cl">
+                    <div class="pages">
+                        {pagenumbers}
+                    </div>
+                </div>
+            </td>
+            <td>
+                摄影作者：
+            </td>
+            <td>
+                {dr_vote[username]}
+            </td>
+            <td>
+                当前票数：
+            </td>
+            <td>
+                {dr_vote[ticketnum]}
+            </td>
+            <td>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                拍摄地点：
+            </td>
+            <td>
+                {dr_vote[name]}
+            </td>
+            <td>
+                上传时间：
+            </td>
+            <td>
+                {dr_vote[postdatetime]}
+            </td>
+            <td>
+                浏览次数：
+            </td>
+            <td>
+                {dr_vote[viewnum]}
+            </td>
+            <td>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="6">
+                <form method="post" action="">
+                <input type="hidden" id="hidaid" name="hidaid" />
+                <input type="hidden" id="hiduid" name="hiduid" />
+
+                <script type="text/javascript">
+					document.getElementById('hidaid').value="{dr_vote[aid]}";
+					document.getElementById('hiduid').value="{request[uid]}";
+                </script>
+
+                我来点评：<font color="red">小于20汉字</font><br />
+                <textarea rows="5" id="txt_comment" name="txt_comment" style="width: 485px">桃花美人，见一思千</textarea>
+                <input type="submit" value="投一票" />
+                </form>
+            </td>
+            <td>
+            </td>
+        </tr>
+    </table>
+    </form>
+</div>
+<%else%>
+<%template _errmsgbox%>
+<%/if%>
+<%template _copyright%>
+<%template _footer%>

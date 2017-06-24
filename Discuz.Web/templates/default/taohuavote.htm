@@ -1,0 +1,145 @@
+﻿<%if page_err==0%>
+<%if {ispost}%>
+<%template _header%>
+<%template _msgbox%>
+<%template _copyright%>
+<%template _footer%>
+<%else%>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>选桃花仙子享迪拜游</title>
+    <link href="{cssdir}/taohua.css" rel="stylesheet" type="text/css" />
+    <link href="{cssdir}/top-nav.css" rel="stylesheet" type="text/css" />
+    <link href="{cssdir}/fot.css" rel="stylesheet" type="text/css" />
+
+    <script type="text/javascript" src="{config.jqueryurl}"></script>
+
+    <script type="text/javascript" src="{jsdir}/jBox/jquery.jBox-2.3.min.js"></script>
+
+    <script type="text/javascript" src="{jsdir}/jBox/i18n/jquery.jBox-zh-CN.js"></script>
+
+    <link type="text/css" rel="stylesheet" href="{jsdir}/jBox/Skins/Red/jbox.css" />
+
+    <script src="{jsdir}/jquery.lazyload.js?t=20130315.js" type="text/javascript"></script>
+
+    <script src="{jsdir}/taohuavote.js?t=20130315.js" type="text/javascript"></script>
+
+    <script type="text/javascript">
+//        $(document).ready(
+//          function($){
+//          $("img").lazyload({
+//            placeholder : "{imagedir}/grey.gif", //加载图片前的占位图片
+//            effect      : "fadeIn" //加载图片使用的效果(淡入)
+//           });
+//          });
+//      
+      function SearchFocus(){
+          var topsearch=$('#txt_topsearch');
+          if(topsearch.val()=='景区或酒店名称')
+          {
+            topsearch.val("")
+          }
+        }
+
+        function SearchBlur(){
+          var topsearch=$('#txt_topsearch');
+          if(topsearch.val()==''){
+            topsearch.val("景区或酒店名称");
+          }
+        }
+    </script>
+
+</head>
+<body>
+    <%template top%>
+    <div class="black">
+        <div class="backtop">
+            <div id="xianzi_box">
+                <img src="{imagedir}/top_02.jpg" border="0" />
+            </div>
+        </div>
+        <div class="backtop02">
+            <div id="xianzi_box">
+                <img src="{imagedir}/top_04.jpg" />
+                <img src="{imagedir}/top_05.jpg" />
+            </div>
+        </div>
+        <div class="backtop03">
+            <div id="xianzi_box">
+                <img src="{imagedir}/top_06.jpg" width="989" height="306" border="0" usemap="#Map" />
+                <map name="Map" id="Map">
+                    <area shape="rect" coords="81,226,219,251" href="taohua_5000.aspx" target="_blank" />
+                    <area shape="rect" coords="434,258,570,286" href="userlottery.aspx" target="_blank" />
+                    <area shape="rect" coords="408,212,409,213" href="#" />
+                </map>
+                <img src="{imagedir}/top_07_7.gif" /></div>
+            <div class="white">
+            </div>
+        </div>
+        <div id="xianzi_box">
+            <h4 style="padding-left: 120px; font-size: 18px; line-height: 44px;">
+                参赛选手</h4>
+            <ul class="shuffling">
+                <li style="padding-top: 391px;"><a href="taohuavote.aspx?uid={request[uid]}&page={prepage}">
+                    <img src="{imagedir}/lunbo_01.gif" width="92" height="92" /></a></li>
+                <li class="shuffling_center">
+                    <dl>
+                        <dt>
+                            <img src="upload/{dr_vote[filename]}" width="600" height="742" /></dt>
+                        <dd>
+                            {dr_vote[aid]}号 {dr_vote[title]}</dd>
+                        <dd>
+                            <span style="font-family: 宋体; font-size: 14px;">已获<label id="lblticketnum{dr_vote[aid]}"
+                                style="color: #f3f06d;">{dr_vote[ticketnum]}</label>票</span>
+                            <form method="post" action="" id="formvote" name="formvote">
+                            <input type="hidden" id="hidaid" name="hidaid" />
+                            <input type="hidden" id="hiduid" name="hiduid" />
+
+                            <script type="text/javascript">
+					                document.getElementById('hidaid').value="{dr_vote[aid]}";
+					                document.getElementById('hiduid').value="{request[uid]}";
+                            </script>
+
+                            <a href="javascript:void(0);" onclick="CheckVote({dr_vote[aid]},'{dr_vote[title]}');">
+                                <img src="{imagedir}/dianping2.gif" border="0" align="right" /></a>
+                            </form>
+                        </dd>
+                        <dd>
+                            <a href="showtopic-{dr_vote[tid]}.aspx" target="_blank">
+                                <img src="{imagedir}/dianping.gif" /></a></dd>
+                    </dl>
+                </li>
+                <li style="padding-top: 391px;"><a href="taohuavote.aspx?uid={request[uid]}&page={nexpage}">
+                    <img src="{imagedir}/lunbo_02.gif" width="92" height="92" /></a></li>
+                <div class="clear">
+                </div>
+            </ul>
+        </div>
+        <div class="copyui">
+        </div>
+        <div class="copyui_bottom">
+            <dl id="xianzi_box">
+                <dt style="font-size: 14px;"><strong>注意事项</strong></dt>
+                <dd>
+                    1.本次活动中的获奖信息，活动主办方将以邮件和电话联络2种方式通知获奖网友，</dd>
+                <dd>
+                    2.本次活动中获奖的网友请在收到获奖信息后，尽快回复主办方（飞票网）的获奖通知信。如在获奖信息公布10天内仍未回复确认，则视为放弃。</dd>
+                <dd>
+                    3.本次活动严谨作弊，一经发现，即取消相关参与者的获奖资格。</dd>
+                <dd>
+                    4.本次活动最终解释权归飞票网所以。</dd>
+            </dl>
+        </div>
+    </div>
+    <%template _webfooter%>
+</body>
+</html>
+<%/if%>
+<%else%>
+<%template _header%>
+<%template _errmsgbox%>
+<%template _copyright%>
+<%template _footer%>
+<%/if%>

@@ -1,0 +1,26 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>{pagetitle} - {config.forumtitle}</title>
+</head>
+<body>
+    我的cool首页
+    <br />
+    <br />
+    版块列表<br />
+    <br />
+    <%loop forum forumlist%>
+    <a href="showforum-{forum[fid]}.aspx">{forum[name]}</a><br />
+    <%/loop%>
+    <br />
+    <br />
+    在线列表
+    <br />
+    <br />
+    <br />
+    <%loop onlineuser onlineuserlist%>
+    <a href="userinfo.aspx?userid={onlineuser[userid]}" target="_blank">{onlineuser[username]}</a>
+    <%/loop%>
+</body>
+</html>

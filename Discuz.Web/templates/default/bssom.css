@@ -1,0 +1,82 @@
+body{margin:0;padding:0;outline:0; font-family:宋体; color:#fff;}
+input,select,textarea{font-family:Tahoma,Arial,Helvetica,STHeiti;}
+body, p, div{margin:0; padding:0; word-break:break-all; word-wrap:break-word;}
+h1, h2, h3, h4, h5, h6 { margin:0; padding:0; font-size: 100%;font-family:"Microsoft Yahei",Tahoma,Arial,Helvetica,STHeiti; color:#fff;; }
+ul,ol,li,dl,dd,dt{ margin:0; padding:0; list-style:none;}
+img{ border:0}
+.clear{ clear:both}
+#xianzi_box{ width:990px; margin:0 auto;}
+#menuleft{float:left;}
+/*张门票免费送*/
+.dabeijing{ background:url(images/bssom_image/dabeijing.jpg) top center no-repeat; width:100%;height:auto}
+.Processiu{ background:url(images/bssom_image/guize_bck2.jpg) no-repeat; height:481px; padding:31px 0 0 20px;}
+.License_left{ width:644px; float:left}
+.Processiu_gz{}
+.Processiu_gz dt{ color:#fe0267; font-size:24px;font-family:"Microsoft Yahei";}
+.Processiu_gz dd{ float:left; display:block;}
+.jianbian_x{margin-top:21px;}
+.hongred{ background:#5b0220}
+.License_plate{ background:url(images/bssom_image/5qian_08.jpg) right no-repeat; margin-top:26px; height:auto}
+.License_plate li{ line-height:34px;}
+.License_plate li.cuzi{ color:#fe0267; font-size:24px;font-family:"Microsoft Yahei";}
+.lighting{ width:276px; float:left; background:url(images/bssom_image/zhaoming.gif) no-repeat; height:275px;margin-left:25px; padding:85px 0 0 14px;}
+.lighting dl{}
+.lighting dl dt{font-size:14px;font-family:"Microsoft Yahei"; font-weight:bold;}
+.lighting dl dt span{ font-size:18px;}
+.lighting dl dd{ line-height:20px; width:158px; margin-top:10px; padding-left:63px; font-size:12px;}
+.djcanyu{ padding-top:41px; text-align:center;}
+.jieshao{ margin-top:34px; background:url(images/bssom_image/zhaoming_2.gif) no-repeat; height:317px; padding:16px 0 0 0;}
+.jieshao_2{background: url(images/bssom_image/guize_bck3.jpg) no-repeat; height:317px; padding:44px 0 0 0;}
+.taoy_mf{ padding-left:13px;}
+.taoy_mf dt{ float:left}
+.taoy_mf dd{ float:left; margin-left:12px;width:463px; line-height:22px; font-size:12px; margin-bottom:5px;}
+.taoy_mf dd.datuan{ background:url(images/bssom_image/piaojia.gif) no-repeat; height:35px;font-size:24px;font-family:"Microsoft Yahei"; font-weight:normal; text-align:center;padding:65px 0 0 0px;}
+.taoy_mf dd.datuan02{ background:url(images/bssom_image/piaojia2.gif) no-repeat; height:32px;font-size:24px;font-family:"Microsoft Yahei"; font-weight:normal;padding:72px 0 0 0px; float:right;text-indent:2em;}
+.taoy_mf dd.datuan03{ background:url(images/bssom_image/piaojia4.gif) no-repeat; height:28px;font-size:24px;font-family:"Microsoft Yahei"; font-weight:normal;padding:55px 0 0 0px; float:right;text-indent:4em;}
+.taoy_mf dd.datuan04{ background:url(images/bssom_image/piaojia5.gif) no-repeat; height:28px;font-size:24px;font-family:"Microsoft Yahei"; font-weight:normal;padding:55px 0 0 0px; float:right;text-indent:2em;}
+.taoy_mf dd.datuan05{ background:url(images/bssom_image/piaojia6.gif) no-repeat; height:34px;font-size:24px;font-family:"Microsoft Yahei"; font-weight:normal;padding:5px 0 0 0px; float:right; margin-top:20px; text-align:center}
+.taoy_mf dd.szd{ position:relative; margin-top:-94px; float:right; padding-right:26px;}
+.qukankan{padding-top:10px;}
+.qukankan li{ float:left}
+.qukankan li.qcer{ background:#f41b7e; padding:5px 35px 5px 0; font-size:12px;text-indent:inherit;}
+.qukankan li.qcer02{ background:#f41b7e; padding:5px 20px 5px 0; font-size:12px;text-indent:inherit;}
+.The_light{ background:url(images/bssom_image/5qian_02.jpg) no-repeat; height:248px;}
+.The_light dl{ background:url(images/bssom_image/zhaoming_4.gif) no-repeat; height:136px; width:213px; margin-left:42px; text-align:center; padding:10px 0 0 16px; line-height:40px;}
+.The_light dl dt{}
+.The_light dl dd{ width:200px;}
+.The_light dl dd ul{}
+.The_light dl dd ul li{ float:leftl;font-family:"Microsoft Yahei"; line-height:28px;}
+.The_light dl dd ul li label{height:29px;width:130px; display:block; margin-left:1px; float:left; line-height:28px; font-size:26px;font-family:"Microsoft Yahei";}
+
+/*注意事项*/
+.Matters{ background:url(images/zhuyi.gif) no-repeat; height:217px; margin-top:17px; padding:25px 0 0 25px;font-family:"Microsoft Yahei"; line-height:24px;}
+.Matters dt{font-size:24px; color:#fe0243; padding-bottom:15px;}
+.Matters dd{font-size:14px; }
+
+/*桃花节首页*/
+.pink{background:#e1556f; padding-bottom:30px;}
+.pink_bottom{ width:1534px; margin:0 auto;}
+.pink_bottom li{ float:left}
+.youjity{ height:529px; overflow:hidden;}
+.youjity04 li,.youjity03 li,.youjity02 li,.youjity li{ float:left; display:block;}
+.youjity02{ height:580px; overflow:hidden;}
+.youjity03{ height:446px; overflow:hidden;}
+.youjity04{ height:432px; overflow:hidden;}
+.youjity05{}
+.youjity05 li{float:left}
+.dongtai{ background:url(images/bssom_image/dongtai02.gif) repeat-y; height:517px; width:312px; padding:63px 0 0 23px;}
+.dongtai dt{ padding-bottom:19px;}
+.dongtai dd{ line-height:24px; border-bottom:1px dotted #fff; width:274px;}
+.dongtai dd span{ padding:0 10px 0 14px;}
+.dongtai dd label{ font-weight:bold; color:#ff868f}
+.gonglxz{ line-height:22px; color:#ff93a6; padding-right:35px; font-size:12px;}
+.flaoy{background:url(images/bssom_image/huase.jpg) center no-repeat; width:100%; height:auto; margin-top:63px;}
+.flaoy_botom{ background:#bcbcbc; margin:17px 0 90px 0;}
+.flaoy_botom ul{ width:658px; margin:0 auto; padding:30px 0 0px 0}
+.flaoy_botom ul li{ float:left; margin-left:14px;*margin-left:7px;}
+.index_backg{ background:url(images/bssom_image/index_dbj_01.jpg) top center no-repeat; width:100%; height:auto;}
+.index_backg02{ background:url(images/bssom_image/index_dbj_02.jpg) top center no-repeat; width:100%; height:auto;}
+.index_backg03{ background:url(images/bssom_image/index_dbj_03.jpg) top no-repeat; width:100%; height:auto;}
+.top_iru{ background:url(images/bssom_image/index_top_02.jpg) no-repeat; height:177px;}
+.yucan{ font-size:14px;font-family:"Microsoft Yahei"; line-height:28px; padding-top:15px;}
+.yucan span{ background:url(images/bssom_image/zhaoming_8.gif) no-repeat; width:19px; height:25px; margin-left:1px; display:block; float:left; font-size:30px; line-height:20px; padding-top:5px;}
